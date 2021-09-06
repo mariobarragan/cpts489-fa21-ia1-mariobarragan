@@ -26,4 +26,14 @@
         .contains("action-dialog")) {
             keyDownDialogFocused(e);
     }
+    else if (document.activeElement.id === "sLink") {
+        if (e.code === "Enter") {
+            setfocusToModeTab();
+        }
+    }
+    else if (document.activeElement.id === "searchBtn") {
+        if (e.code === "Enter") {
+            setFocusForSearchBtnInput();
+        }
+    }
  });
